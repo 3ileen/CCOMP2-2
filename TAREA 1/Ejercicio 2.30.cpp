@@ -3,17 +3,21 @@ using namespace std;
 //Ejercicio 2.30
 int main() {
 	int peso;
-	float altura,IMC;
+	float altura,IMC,x,y;
 	char l,I;
-	cout<<"Ingrese su peso: ";cin>>peso;
-	cout<<"Ingrese su altura: ";cin>>altura;
 	cout<<"Ponga l si quiere su IMC en libras y pulgadas o ponga k si quiere su IMC en kilogramos y metros: ";cin>>l;
+	cout<<"Ingrese su peso: ";cin>>x;
+	cout<<"Ingrese su altura: ";cin>>y;
 	
 	if (l=='l'){
+		peso=x*2.2;
+		altura=y*0.02;
+			
 		IMC=peso*703/(altura*altura);
 	}
 	else {
-		IMC=peso/(altura*altura);
+		
+		IMC=x/(y*y);
 	}
 	cout<<"Su IMC es: "<<IMC<<endl;
 	
@@ -32,4 +36,5 @@ int main() {
 	
 	return 0;
 }
+
 
